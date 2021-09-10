@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+// kendo-angular-dropdowns
+@import "~@progress/kendo-theme-default/scss/autocomplete/_index.scss";
+@import "~@progress/kendo-theme-default/scss/combobox/_index.scss";
+@import "~@progress/kendo-theme-default/scss/dropdownlist/_index.scss";
+@import "~@progress/kendo-theme-default/scss/dropdowntree/_index.scss";
+@import "~@progress/kendo-theme-default/scss/multiselect/_index.scss";
+
+// kendo-angular-gauges
+@import "~@progress/kendo-theme-default/scss/dataviz/_index.scss";
+
+// kendo-angular-grid
+@import "~@progress/kendo-theme-default/scss/grid/_index.scss";

@@ -1,0 +1,17 @@
+.k-listview {
+  font-family: sans-serif;
+  height: 340px;
+}
+.product {
+  width: 100%;
+}
+.header {
+  display: flex;
+  padding: 12px;
+}
+.title {
+  flex: 1;
+  font-size: 22px;
+  font-weight: bold;
+}
+@import "~@progress/kendo-theme-default/scss/grid/_index.scss";

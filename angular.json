@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kendo-angular-app": {
+    "angular-search-ostan": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kendo-angular-app",
+            "outputPath": "dist/angular-search-ostan",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,6 +31,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
               "src/styles.scss"
             ],
             "scripts": []
@@ -72,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "kendo-angular-app:build:production"
+              "browserTarget": "angular-search-ostan:build:production"
             },
             "development": {
-              "browserTarget": "kendo-angular-app:build:development"
+              "browserTarget": "angular-search-ostan:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kendo-angular-app:build"
+            "browserTarget": "angular-search-ostan:build"
           }
         },
         "test": {
@@ -99,6 +102,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
               "src/styles.scss"
             ],
             "scripts": []
@@ -107,5 +113,5 @@
       }
     }
   },
-  "defaultProject": "kendo-angular-app"
+  "defaultProject": "angular-search-ostan"
 }
